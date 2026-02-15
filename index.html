@@ -7,19 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to NextStep Academy</h1>
-  </header>
-  <section>
-    <h2>Our Courses</h2>
-    <ul>
-      <li>Cybersecurity Basics</li>
-      <li>Python Programming</li>
-      <li>Networking Fundamentals</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Contact: info@nextstepacademy.com</p>
-  </footer>
+
+<header>
+  <h1>NextStep Academy</h1>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#inquiry">Inquiry</a>
+  </nav>
+</header>
+
+<section id="courses">
+  <h2>Our Courses</h2>
+
+  <div class="course">
+    <h3>Cybersecurity</h3>
+    <p>Learn the fundamentals of cybersecurity including network security, threat analysis, and ethical hacking. Duration: 12 weeks.</p>
+  </div>
+
+  <div class="course">
+    <h3>DevOps</h3>
+    <p>Master DevOps tools and practices including CI/CD, Docker, Kubernetes, and cloud deployment. Duration: 10 weeks.</p>
+  </div>
+</section>
+
+<section id="inquiry">
+  <h2>Inquiry / Enrollment Form</h2>
+  <form id="inquiryForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="course">Course Interested:</label>
+    <select id="course" name="course" required>
+      <option value="cybersecurity">Cybersecurity</option>
+      <option value="devops">DevOps</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Submit Inquiry</button>
+  </form>
+  <p id="successMessage"></p>
+</section>
+
+<footer>
+  <p>Contact us at info@nextstepacademy.com</p>
+  <p>&copy; 2026 NextStep Academy</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
